@@ -19,6 +19,7 @@ body{
 
 header{
     background-color: rgb(88, 2, 2);
+    
 }
 
 header>.container>h1{
@@ -27,6 +28,7 @@ header>.container>h1{
 
 header>.container>h1>a{
     color:$primarycolor;
+    
 }
 
 
@@ -35,15 +37,18 @@ header>.container>h1>a{
     width: 80%;
     max-width: 1140px;
     // background-color: orange;
+    
 }
 
 header>.container>nav>ul{
     display: flex;
+    
     // justify-content: space-between;
 }
 
 header>.container>nav>ul>li{
     margin-right: 30px;
+    
 }
 
 header>.container>nav>ul>li>a{
@@ -51,27 +56,76 @@ header>.container>nav>ul>li>a{
     color: $primarycolor;
     font-size: 1.2em;
     letter-spacing: 2px;
+    border-radius: 10px;
 }
 
 header>.container>nav>ul>li>a:hover{
     background-color: rgba(61, 28, 8, 0.804);
     color: white;
+    border-radius: 10px;
 }
 
 // =============================
 // 內容區塊
 // =============================
 
+
+//**** text patterns
+.txt-center{
+    text-align: center;
+}
+
+.txt-left{
+    text-align: left;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.text-justify{
+    text-align: justify;
+}
+
+//*** images patterns
 .img-fluid{
     width:100%;
 }
+
+.img-rounded{
+    border-radius: 8px;
+}
+
+.img-circle{
+    border-radius: 100%;
+}
+
+// *** block patters 區塊相關樣式
 
 .row{
     display: flex;
     flex-wrap: wrap;
     // force to go to a new line
+    
 }
 
+// *** 4 columns 4欄式
 .col-4{
-    width: 33.3333%;
+    width: calc(100% / 3 - 30px);
+    margin: 0 15px 40px 15px;
+    // 上右下左
+}
+
+// *** 3 columns 3欄式
+.col-3{
+    width: calc(100% / 4 - 30px);
+    margin: 0 15px 40px 15px;
+    // 上右下左
+}
+
+// *** 2 columns 2欄式
+.col-6{
+    width: calc(100% / 2 - 30px);
+    margin: 0 15px 40px 15px;
+    // 上右下左
 }
