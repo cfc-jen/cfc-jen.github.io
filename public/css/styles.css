@@ -63,12 +63,16 @@ header > .container > nav > ul > li > a:hover {
   text-align: left;
 }
 
-.text-right {
+.txt-right {
   text-align: right;
 }
 
-.text-justify {
+.txt-justify {
   text-align: justify;
+}
+
+.txt-footer-xxsmall {
+  font-size: 10px;
 }
 
 .img-fluid {
@@ -89,6 +93,11 @@ header > .container > nav > ul > li > a:hover {
   flex-wrap: wrap;
 }
 
+.col-5 {
+  width: calc(100% / 5 - 30px);
+  margin: 0 15px 40px 15px;
+}
+
 .col-4 {
   width: calc(100% / 3 - 30px);
   margin: 0 15px 40px 15px;
@@ -99,7 +108,7 @@ header > .container > nav > ul > li > a:hover {
   margin: 0 15px 40px 15px;
 }
 
-.col-6 {
+.col-2 {
   width: calc(100% / 2 - 30px);
   margin: 0 15px 40px 15px;
 }
@@ -120,4 +129,21 @@ header > .container > nav > ul > li > a:hover {
 
 .description {
   color: #d23118;
+}
+
+footer {
+  background-color: #d23118;
+  padding: 40px 0 40px 0;
+}
+
+dt {
+  font-size: 1.2em;
+}
+
+dd {
+  margin-bottom: 4px;
+}
+
+dd > a {
+  color: brown;
 }

@@ -79,12 +79,16 @@ header>.container>nav>ul>li>a:hover{
     text-align: left;
 }
 
-.text-right{
+.txt-right{
     text-align: right;
 }
 
-.text-justify{
+.txt-justify{
     text-align: justify;
+}
+
+.txt-footer-xxsmall{
+    font-size: 10px;
 }
 
 //*** images patterns
@@ -110,6 +114,12 @@ header>.container>nav>ul>li>a:hover{
     
 }
 
+// *** 5欄式
+.col-5{
+    width: calc(100% / 5 - 30px);
+    margin: 0 15px 40px 15px;;
+}
+
 // *** 4 columns 4欄式
 .col-4{
     width: calc(100% / 3 - 30px);
@@ -126,11 +136,13 @@ header>.container>nav>ul>li>a:hover{
 }
 
 // *** 2 columns 2欄式
-.col-6{
+.col-2{
     width: calc(100% / 2 - 30px);
     margin: 0 15px 40px 15px;
     // 上右下左
 }
+
+
 
 .col-4:hover img{
     clear: both;
@@ -149,4 +161,21 @@ header>.container>nav>ul>li>a:hover{
 
 .description{
     color: $primarycolor;
+}
+
+footer{
+    background-color: $primarycolor;
+    padding: 40px 0 40px 0;
+}
+
+dt{
+    font-size: 1.2em;
+}
+
+dd{
+    margin-bottom: 4px;
+}
+
+dd>a{
+    color: brown;
 }
