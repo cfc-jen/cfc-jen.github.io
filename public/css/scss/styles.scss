@@ -1,0 +1,59 @@
+$primarycolor: rgb(210, 49, 24);
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    margin: 0;
+}
+
+header{
+    background-color: rgb(88, 2, 2);
+}
+
+header>.container>h1{
+    padding-top: 20px;
+}
+
+header>.container>h1>a{
+    color:$primarycolor;
+}
+
+
+.container{
+    margin: auto;
+    width: 80%;
+    max-width: 1140px;
+    // background-color: orange;
+}
+
+header>.container>nav>ul{
+    display: flex;
+    // justify-content: space-between;
+}
+
+header>.container>nav>ul>li{
+    margin-right: 30px;
+}
+
+header>.container>nav>ul>li>a{
+    line-height: 60px;
+    color: $primarycolor;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+}
+
+header>.container>nav>ul>a:hover{
+    background-color: rgba(61, 28, 8, 0.804);
+    color: white;
+}
