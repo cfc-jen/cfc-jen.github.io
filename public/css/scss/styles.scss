@@ -58,3 +58,20 @@ header>.container>nav>ul>li>a:hover{
     color: white;
 }
 
+// =============================
+// 內容區塊
+// =============================
+
+.img-fluid{
+    width:100%
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    // force to go to a new line
+}
+
+.col-4{
+    width: 33.3333%;
+}
