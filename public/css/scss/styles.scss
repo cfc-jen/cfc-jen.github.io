@@ -90,6 +90,7 @@ header>.container>nav>ul>li>a:hover{
 //*** images patterns
 .img-fluid{
     width:100%;
+    display: block;
 }
 
 .img-rounded{
@@ -114,6 +115,7 @@ header>.container>nav>ul>li>a:hover{
     width: calc(100% / 3 - 30px);
     margin: 0 15px 40px 15px;
     // 上右下左
+    // calc 計算數一定要有空格
 }
 
 // *** 3 columns 3欄式
@@ -128,4 +130,23 @@ header>.container>nav>ul>li>a:hover{
     width: calc(100% / 2 - 30px);
     margin: 0 15px 40px 15px;
     // 上右下左
+}
+
+.col-4:hover img{
+    clear: both;
+    width: 300px;
+    height: 300px;
+    transform: scale(1.5);
+    overflow: hidden;
+}
+
+.title a{
+    color: black;
+    font-size: 1.5em;
+    // default font size: 16px 
+    font-weight: 700;
+}
+
+.description{
+    color: $primarycolor;
 }

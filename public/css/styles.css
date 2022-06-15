@@ -73,6 +73,7 @@ header > .container > nav > ul > li > a:hover {
 
 .img-fluid {
   width: 100%;
+  display: block;
 }
 
 .img-rounded {
@@ -101,4 +102,22 @@ header > .container > nav > ul > li > a:hover {
 .col-6 {
   width: calc(100% / 2 - 30px);
   margin: 0 15px 40px 15px;
+}
+
+.col-4:hover img {
+  clear: both;
+  width: 300px;
+  height: 300px;
+  transform: scale(1.5);
+  overflow: hidden;
+}
+
+.title a {
+  color: black;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.description {
+  color: #d23118;
 }
