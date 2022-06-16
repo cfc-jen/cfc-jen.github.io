@@ -272,5 +272,6 @@ section .right {
 }
 
 .btn-primary:hover {
-  color: black;
+  background-color: black;
+  color: grey;
 }
