@@ -14,9 +14,9 @@
         <h1><a href="index.html">Chin's Portfolio</a></h1>
         <nav>
             <ul>
-                <li><a href="#">關於我*</a></li>
+                <li><a href="#">關於我</a></li>
                 <li><a href="#">學習歷程</a></li>
-                <li><a href="design_list.html">網頁設計作品*</a></li>
+                <li><a href="design_list.html">網頁設計作品</a></li>
                 <li><a href="#">聯絡我</a></li>
             </ul>
         </nav>
@@ -24,47 +24,40 @@
    </header>
 <!-- ---header end--- -->
 
-<img src="https://placekitten.com/1920/500" class="img-fluid" alt="">
-
-<!-- content start -->
-
-<!-- .container>h1{最新作品一覽}+.row>.col-4*6>img.img-fluid+p.title>a[href="#"]{標題$}^p.description -->
+<!-- layer[1] container -->
 <div class="container">
-    <h2 class="txt-center">最新作品一覽</h2>
+
+<!-- layer[2] breadcrumb-->
     <div class="row">
-        <div class="col-4">
-            <img src="https://www.stevensegallery.com/300/300" alt="" class="img-fluid img-rounded">
-            <p class="title txt-center"><a href="#">標題1</a></p>
-            <p class="description txt-center">2022-06-15</p>
-        </div>
-        <div class="col-4">
-            <img src="https://placebear.com/300/300" alt="" class="img-fluid img-rounded">
-            <p class="title txt-center"><a href="#">標題2</a></p>
-            <p class="description txt-center">2022-06-15</p>
-        </div>
-        <div class="col-4">
-            <img src="https://picsum.photos/300/300" alt="" class="img-fluid img-rounded">
-            <p class="title txt-center"><a href="#">標題3</a></p>
-            <p class="description txt-center">2022-06-15</p>
-        </div>
-        <div class="col-4">
-            <img src="http://placeimg.com/300/300/any" alt="" class="img-fluid img-rounded">
-            <p class="title txt-center"><a href="#">標題4</a></p>
-            <p class="description txt-center">2022-06-15</p>
-        </div>
-        <div class="col-4">
-            <img src="https://placekitten.com/300/300" alt="" class="img-fluid img-rounded">
-            <p class="title txt-center"><a href="#">標題5</a></p>
-            <p class="description txt-center">2022-06-15</p>
-        </div>
-        <div class="col-4">
-            <img src="https://loremflickr.com/300/300" alt="" class="img-fluid img-rounded">
-            <p class="title txt-center"><a href="#">標題6</a></p>
-            <p class="description txt-center">2022-06-15</p>
-        </div>
+        <ul class="breadcrumb">
+            <li><a href="index.html">首頁</a>&nbsp;|&nbsp;<a href="design_list.html">網頁作品</a></li>
+        </ul>
+<!-- layer[3] aside + main -->
+        <aside class="col-3">分類
+            <div class="row">
+                <ul class="btn-primary">
+                    <li><a class="btn-primary" href="#">購物</a></li>
+                    <li><a class="btn-primary" href="#">募資平台</a></li>
+                    <li><a class="btn-primary" href="#">旅遊</a></li>
+                    <li><a class="btn-primary" href="#">公益團體</a></li>
+                    <li><a class="btn-primary" href="#">學校</a></li>
+                </ul>
+            </div>          
+        </aside>
+        
+        <main class="col-9">內容
+         <!-- .row>.col-4*6>img.img-fluid+a{作品$} -->
+         <div class="row">
+            <div class="col-4"><img src="https://placekitten.com/200/200" alt="" class="img-fluid"><a href="">作品1</a></div>
+            <div class="col-4"><img src="https://placekitten.com/200/200" alt="" class="img-fluid"><a href="">作品2</a></div>
+            <div class="col-4"><img src="https://placekitten.com/200/200" alt="" class="img-fluid"><a href="">作品3</a></div>
+            <div class="col-4"><img src="https://placekitten.com/200/200" alt="" class="img-fluid"><a href="">作品4</a></div>
+            <div class="col-4"><img src="https://placekitten.com/200/200" alt="" class="img-fluid"><a href="">作品5</a></div>
+            <div class="col-4"><img src="https://placekitten.com/200/200" alt="" class="img-fluid"><a href="">作品6</a></div>
+         </div>
+        </main>
     </div>
 </div>
-<!-- content end -->
 
 <!-- footer start -->
 <!-- footer>.container>.row>dl.col-3*4>dt{標題}+dd*4>a[href]{項目$}^^^p.copyright-center{copyright} -->
