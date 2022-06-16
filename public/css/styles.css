@@ -26,6 +26,10 @@ header > .container > h1 {
   padding-top: 20px;
 }
 
+header > .container > h1 > a {
+  color: #d23118;
+}
+
 .container {
   margin: auto;
   width: 80%;
@@ -54,6 +58,10 @@ header > .container > nav > ul > li > a:hover {
   border-radius: 10px;
 }
 
+.date {
+  color: #d23118;
+}
+
 .txt-center {
   text-align: center;
 }
@@ -72,6 +80,10 @@ header > .container > nav > ul > li > a:hover {
 
 .txt-footer-xxsmall {
   font-size: 10px;
+}
+
+.txt-primary {
+  color: #d23118;
 }
 
 .img-fluid {
@@ -266,7 +278,6 @@ section .right {
   margin-bottom: 4px;
   border-radius: 4px;
   text-align: center;
-  width: 100%;
 }
 
 .btn-primary:hover {
@@ -275,12 +286,34 @@ section .right {
   margin-bottom: 4px;
 }
 
-.col-4 div {
+.img-wrap {
+  display: block;
   position: relative;
-  overflow: hidden;
+  margin-bottom: 10px;
 }
 
-.col-4 div:hover img {
-  position: absolute;
+.img-overlay {
+  overflow: hidden;
+  border-radius: 8px;
+  display: block;
+}
+
+.img-wrap img {
+  vertical-align: top;
   transition: all 0.5s;
+}
+
+.img-wrap img:hover {
+  transform: scale(1.5);
+}
+
+.icon-new {
+  position: absolute;
+  width: 50px;
+  line-height: 50px;
+  color: white;
+  border-radius: 100%;
+  left: 0px;
+  top: 0px;
+  background-color: #fdd832;
 }
