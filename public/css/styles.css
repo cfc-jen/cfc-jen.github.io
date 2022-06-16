@@ -135,7 +135,7 @@ header > .container > nav > ul > li > a:hover {
   clear: both;
   width: 300px;
   height: 300px;
-  transform: scale(1.12);
+  transform: scale(1.02);
   overflow: hidden;
 }
 
@@ -173,6 +173,7 @@ dd > a {
   font-size: 16px;
   text-align: center;
   border-radius: 3px;
+  margin-bottom: 10px;
 }
 
 ul.leftSideBar {
@@ -263,7 +264,7 @@ section .right {
 .btn-primary {
   background-color: #d23118;
   padding: 15px;
-  color: black;
+  color: white;
   display: block;
   margin-bottom: 4px;
   border-radius: 4px;
@@ -271,6 +272,5 @@ section .right {
 }
 
 .btn-primary:hover {
-  background-color: black;
-  color: #d23118;
+  color: black;
 }
