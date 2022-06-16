@@ -207,6 +207,7 @@ ul.leftSideBar a:hover {
   background-color: #ef5c28;
   color: #fff;
   border-radius: 3px;
+  margin-bottom: 10px;
 }
 
 ul.leftSideBar li:hover > a {
@@ -264,14 +265,26 @@ section .right {
 .btn-primary {
   background-color: #d23118;
   padding: 15px;
-  color: white;
+  color: black;
   display: block;
   margin-bottom: 4px;
   border-radius: 4px;
   text-align: center;
+  width: 100%;
 }
 
 .btn-primary:hover {
   background-color: black;
-  color: grey;
+  color: white;
+  margin-bottom: 4px;
+}
+
+.col-4 div {
+  position: relative;
+  overflow: hidden;
+}
+
+.col-4 div:hover img {
+  position: absolute;
+  transition: all 0.5s;
 }
