@@ -117,7 +117,7 @@ header > .container > nav > ul > li > a:hover {
   clear: both;
   width: 300px;
   height: 300px;
-  transform: scale(1.5);
+  transform: scale(1.12);
   overflow: hidden;
 }
 
