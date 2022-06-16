@@ -1,9 +1,12 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
 }
 
 ul, ol {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
 }
 
@@ -146,4 +149,50 @@ dd {
 
 dd > a {
   color: brown;
+}
+
+.btn {
+  height: 180px;
+  width: 190px;
+  background-color: #580202;
+  color: white;
+  font-size: 16px;
+  border-radius: 3px;
+  text-align: center;
+  padding: 5px 5px 5px 5px;
+}
+
+ul.dropdown-menu {
+  border-radius: 3px;
+  display: inline-block;
+  font-size: 16px;
+}
+
+ul.dropdown-menu li {
+  position: relative;
+  white-space: nowrap;
+  float: left;
+  background-color: #735454;
+  margin-left: 1%;
+}
+
+ul.dropdown-menu a {
+  background-color: brown;
+  color: #333;
+  display: block;
+  padding: 0 30px;
+  text-decoration: none;
+  line-height: 40px;
+}
+
+ul.dropdown-menu a:hover {
+  /* 滑鼠滑入按鈕變色*/
+  background-color: #ef5c28;
+  color: #fff;
+}
+
+ul.dropdown-menu li:hover > a {
+  /* 滑鼠移入次選單上層按鈕保持變色*/
+  background-color: #ef5c28;
+  color: #fff;
 }
