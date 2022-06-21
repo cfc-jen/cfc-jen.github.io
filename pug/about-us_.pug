@@ -1,0 +1,106 @@
+doctype html
+html(lang='zh_Hant')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title Chin's Profolio | 關於我
+    link(rel='stylesheet' href='public/css/styles.css')
+  body
+    // header>.container>h1{Chin's Portfolio}+nav>ul>li*4>a[href="#"]{文}
+    header
+        .container
+          a.icon-menu(href='index.html') menu
+          h1
+            a(href='index.html') Chin's Portfolio
+          nav
+            ul
+              li
+                a(href='about-us.html') 關於我
+              li
+                a(href='learning.html') 學習歷程
+              li
+                a(href='design_list.html') 網頁設計作品
+              li
+                a(href='contact-us.html') 聯絡我
+    // ---header end---
+    // --- content start ---
+    .container
+        .row
+          .col-12.col-md6
+            li
+              a(href='index.html') 首頁 > 
+              a(href='about-us_.html') 關於我
+              //  layer[4] aside.col-6 + main.col-6
+    .container
+        .row
+            .col-12
+              h2 關於我
+        .row
+            .col-12.col-md6
+              img.img-fluid.img-rounded(src='https://www.stevensegallery.com/300/300' alt='')
+            .col-12.col-md6 標題1
+        .row
+            .col-12.col-md6
+              img.img-fluid.img-rounded(src='https://www.stevensegallery.com/300/300' alt='')
+            .col-12.col-md6
+              p.title.txt-center 標題1
+    // --- content end ---
+    // footer start
+    // footer>.container>.row>dl.col-3*4>dt{標題}+dd*4>a[href]{項目$}^^^p.copyright-center{copyright}
+    footer
+      .container
+        .row
+          dl.col-12.col-5
+            dt 標題
+            dd
+              a(href='') 項目1
+            dd
+              a(href='') 項目2
+            dd
+              a(href='') 項目3
+            dd
+              a(href='') 項目4
+          dl.col-12.col-5
+            dt 標題
+            dd
+              a(href='') 項目1
+            dd
+              a(href='') 項目2
+            dd
+              a(href='') 項目3
+            dd
+              a(href='') 項目4
+          dl.col-12.col-5
+            dt 標題
+            dd
+              a(href='') 項目1
+            dd
+              a(href='') 項目2
+            dd
+              a(href='') 項目3
+            dd
+              a(href='') 項目4
+          dl.col-12.col-5
+            dt 標題
+            dd
+              a(href='') 項目1
+            dd
+              a(href='') 項目2
+            dd
+              a(href='') 項目3
+            dd
+              a(href='') 項目4
+          dl.col-12.col-5
+            dt 標題
+            dd
+              a(href='') 項目1
+            dd
+              a(href='') 項目2
+            dd
+              a(href='') 項目3
+            dd
+              a(href='') 項目4
+        p.copyright-center.txt-center Copyright 2022 © Chin Fang Chen 
+        p.copyright-center.txt-center.txt-footer-xxsmall 僅供個人學習目的無商業用途使用 
+    // footer end
