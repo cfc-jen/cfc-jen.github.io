@@ -404,13 +404,16 @@ section .right{
     header > .container nav{
         width: 100%;
         position: absolute;
-        top:60px;
-        left:0px;
+        top:60px; // 用F12檢視icon-menu高度60px
+        // left:0px; 會影響選單滑入的方向
         background-color: black;
     }
     nav{
         // viewport width
-        left: -100vw;
+        left: 0px;
+        // 下一行等2層選單做完後再打開
+        // left: -100vw;
+        // height: 100vw; 蓋板效果
         opacity: 0;
         transition: all .3s;
     }
