@@ -414,7 +414,7 @@ section .right{
         // 下一行等2層選單做完後再打開
         // left: -100vw;
         // height: 100vw; 蓋板效果
-        opacity: 0;
+        // opacity: 0;
         transition: all .3s;
     }
     .icon-menu:hover +nav{
