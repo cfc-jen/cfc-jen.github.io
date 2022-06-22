@@ -19,9 +19,19 @@ html(lang='zh_Hant')
                 li
                   a(href='about-us_.html') 關於我
                 li
-                  a(href='learning.html') 學習歷程
+                  a(href='#') 學習歷程
+                  ul.submenu
+                    li
+                      a(href="learning.html") 學習1 
+                    li
+                      a(href="learning.html") 學習2
                 li
-                  a(href='design_list.html') 網頁設計作品
+                  a(href='#') 網頁設計作品
+                  ul.submenu
+                    li
+                      a(href="design_list.html") 設計1 
+                    li
+                      a(href="design_list.html") 設計2
                 li
                   a(href='#') 聯絡我
     // ---header end---
@@ -29,7 +39,7 @@ html(lang='zh_Hant')
     // content start
     // .container>h1{最新作品一覽}+.row>.col-md-4*6>img.img-fluid+p.title>a[href="#"]{標題$}^p.description
     .container
-      h2.txt-center 最新作品一覽
+      h2.fz-3.mb-3.txt-center 最新作品一覽
       .row
         .col-6.col-md-4.col-lg-3
           img.img-fluid.img-rounded(src='https://www.stevensegallery.com/300/300' alt='')

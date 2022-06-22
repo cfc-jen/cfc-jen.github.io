@@ -335,7 +335,6 @@ section .right{
     background-color: black;
     color: white;
     margin-bottom: 4px;
-
 }
 
 // ====================================
@@ -393,7 +392,7 @@ section .right{
         // float: right;
         width: 15%;
         display: block;
-        background-color: rgb(253, 105, 13);
+        background-color:$primarycolor;
         color:black;
         line-height: 60px;
         text-align: center;
@@ -439,13 +438,75 @@ section .right{
         width: 100%;
         border-bottom: 1px solid $primarycolor;
     }
+    header>.container nav>ul>li>a{
+        display: block;
+    }
+    header>.container nav>ul>li:hover .submenu{
+        display: block;
+    }
+    .submenu{
+        display: none;
+        background-color: $primarycolor;
+    }
+    .submenu>li{
+        line-height: 60px;
+        border-bottom: 1px solid black;
+    }
+    .submenu>li>a{
+        color: black;
+        display: block;
+    }
 
 } // max-width 767 end
 
 // 超過768px以上執行 start 
 @media (min-width:768px){
     .icon-menu{
-        // display: none;
+        display: none;
+    }
+    header>.container nav{
+        width:100%
+    }
+    header>.container nav>ul>li{
+        position: relative;
+    }
+    header>.container nav>ul>li:hover .submenu{
+        display: block;
+    }
+    // --- logo置中 start
+    header{
+        position: relative
+    };
+    header h1{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(144, 143, 143, 0.519);
+    }
+    header nav{
+        display: flex;
+        justify-content: center;
+    }
+    header>.container nav>ul>li{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    header>.container nav>ul>li:nth-child(2){
+        margin-right: 180px;
+    }
+    header>.container nav>ul>li:nth-child(3){
+        margin-left: 30px;
+    }
+    // --- logo置中 end
+    .submenu{
+        position: absolute;
+        background-color: #fff;
+        width: 130%;
+        left: 0px;
+        // bottom: -42px;
+        top: 70px;
+        padding: 10px;
     }
 } // min-width 768 end 
 
@@ -474,9 +535,22 @@ section .right{
             margin: 0 15px 40px 15px;
         }
     }
+    .order-md-1{
+        order: -1;
+    }
 } // 768px end
 
 @media (min-width:1200px) {
+    //---針對PC較寬的四個ul間距拉大
+    header>.container nav>ul>li{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    header>.container nav>ul>li:nth-child(2){
+        margin-right: 300px;
+    }
+    
     @for $i from 1 through 12 {
         .col-lg-#{$i}{
             --num: calc(12 / #{$i});
